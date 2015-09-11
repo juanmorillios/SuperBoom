@@ -25,8 +25,13 @@ class ViewController: UIViewController, UIAlertViewDelegate {
 
     @IBAction func pressBtnBoomBlack(sender: AnyObject) {
         
+        // Proceso para ocultar las imagenes
+        
         imgBlack.hidden = true
         imgBoomBg.hidden = false
+        imgRed.hidden = false
+        
+        //Mostramos una alerta para notifcar la desactivación de la bomba
         
     let alert = UIAlertView (title: "Alert!!!!", message: "A desactivado la bomba Black", delegate: nil, cancelButtonTitle: "Aceptar")
         
@@ -36,10 +41,15 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     }
 
     @IBAction func pressBtnBoomRed(sender: AnyObject) {
-        
+       
+        // Proceso para ocultar las imagenes
+
         imgRed.hidden = true
+        imgBlack.hidden = false
         
         imgBoomBg.hidden = false
+        
+        //Mostramos una alerta para notifcar la desactivación de la bomba
         
         let alert = UIAlertView (title: "Alert!!!!", message: "A desactivado la bomba Red", delegate: nil, cancelButtonTitle: "Aceptar")
         
