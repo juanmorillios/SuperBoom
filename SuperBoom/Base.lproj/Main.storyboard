@@ -17,48 +17,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-en-TDb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boomblack" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-Eo-UZf">
-                                <rect key="frame" x="16" y="150" width="174" height="149"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boombred" translatesAutoresizingMaskIntoConstraints="NO" id="MIF-G8-mgB">
-                                <rect key="frame" x="198" y="161" width="161" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-3y-GgE">
-                                <rect key="frame" x="105" y="375" width="165" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Hide Boom Black">
-                                    <color key="titleColor" red="0.12156862745098039" green="0.070588235294117646" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressBtnBoomBlack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IIG-UR-64K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJj-RQ-d0V">
-                                <rect key="frame" x="110" y="437" width="155" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Hide Boom Red">
-                                    <color key="titleColor" red="0.38039215686274508" green="0.0039215686274509803" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressBtnBoomRed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zjL-QB-hTd"/>
-                                </connections>
-                            </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boombg" translatesAutoresizingMaskIntoConstraints="NO" id="Vv7-vQ-jlZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boombg" translatesAutoresizingMaskIntoConstraints="NO" id="Vv7-vQ-jlZ">
                                 <rect key="frame" x="-7" y="-8" width="382" height="719"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boomlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-en-TDb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boom2" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-Eo-UZf" userLabel="firstBombaImageView">
+                                <rect key="frame" x="16" y="150" width="174" height="149"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boom1" translatesAutoresizingMaskIntoConstraints="NO" id="MIF-G8-mgB" userLabel="secondBombaImageView">
+                                <rect key="frame" x="198" y="161" width="161" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-ha-fEz">
+                                <rect key="frame" x="132" y="381" width="105" height="84"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="41"/>
+                                <size key="titleShadowOffset" width="3" height="1"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressPlayGameBombaBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TyG-AI-iFD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fo-XD-TLj">
+                                <rect key="frame" x="20" y="569" width="64" height="71"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-Lx-fdy">
+                                <rect key="frame" x="295" y="569" width="60" height="71"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="puntos" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-3B-G0y">
+                                <rect key="frame" x="26" y="550" width="64" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.62352941176470589" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="puntos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5f-og-zuF">
+                                <rect key="frame" x="289" y="550" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.62352941176470589" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.50196081399917603" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="bombas" destination="8Ct-Lx-fdy" id="ovi-U8-T6J"/>
                         <outlet property="imgBlack" destination="Dl8-Eo-UZf" id="2tS-he-Yws"/>
                         <outlet property="imgBoomBg" destination="Vv7-vQ-jlZ" id="0AG-b9-pUe"/>
                         <outlet property="imgRed" destination="MIF-G8-mgB" id="4QY-5h-PGX"/>
+                        <outlet property="jugador" destination="7Fo-XD-TLj" id="RI5-qa-2c2"/>
+                        <outlet property="playButton" destination="c8X-ha-fEz" id="XJt-KG-hFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -67,9 +87,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Boom" width="433" height="83"/>
         <image name="Boombg" width="1667" height="1667"/>
-        <image name="boomblack" width="256" height="256"/>
-        <image name="boombred" width="256" height="256"/>
+        <image name="Boomlogo" width="433" height="83"/>
+        <image name="boom1" width="256" height="256"/>
+        <image name="boom2" width="256" height="256"/>
     </resources>
 </document>
