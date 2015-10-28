@@ -73,6 +73,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backGroundImageView" destination="Vv7-vQ-jlZ" id="Cho-rI-BcM"/>
                         <outlet property="bombas" destination="8Ct-Lx-fdy" id="ovi-U8-T6J"/>
                         <outlet property="imgBlack" destination="Dl8-Eo-UZf" id="2tS-he-Yws"/>
                         <outlet property="imgBoomBg" destination="Vv7-vQ-jlZ" id="0AG-b9-pUe"/>

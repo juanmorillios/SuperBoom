@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     @IBOutlet weak var jugador: UILabel!
     @IBOutlet weak var bombas: UILabel!
     
+    @IBOutlet weak var backGroundImageView: UIImageView!
     var colorOfBombasArray:[String] = ["boom","boom1", "boomb2","boom3","boom4","boom5","boom6","boom7"]
     var jugadorScore = 0
     var bombasScore = 0
@@ -25,6 +26,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         super.viewDidLoad()
        
 
+        self.playButton.setTitle("Play", forState: UIControlState.Normal)
     
     }
 
